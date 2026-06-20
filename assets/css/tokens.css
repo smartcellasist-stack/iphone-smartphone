@@ -1,0 +1,42 @@
+/* ═══════════════════════════════════════════════════════════
+   TOKENS.CSS — fonte única de verdade de design
+   iphonesmartphone.com.br
+   Dark premium + acentos titânio/Apple
+   Não redeclare estas variáveis em nenhuma outra página.
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Hierarquia de fundo */
+  --bg:    #080808;
+  --bg1:   #0f0f0f;
+  --bg2:   #161616;
+  --bg3:   #1e1e1e;
+  --line:  rgba(255, 255, 255, 0.07);
+  --line2: rgba(255, 255, 255, 0.12);
+
+  /* Hierarquia de texto */
+  --t1: #f5f5f7;  /* primário — off-white estilo Apple */
+  --t2: #a1a1a6;  /* secundário */
+  --t3: #6e6e73;  /* terciário */
+
+  /* Paleta de acento */
+  --blue:   #0071e3;  /* Apple blue */
+  --blue2:  #147ce5;
+  --teal:   #30d158;  /* Apple green */
+  --gold:   #ffd60a;  /* Apple yellow */
+  --amazon: #ff9900;
+  --shopee: #ee4d2d;
+  --prime:  #00a8e1;
+
+  /* Estado (sucesso/erro — usados no quiz, formulários, badges) */
+  --success: #30d158;
+  --error:   #ff453a;
+
+  /* Tipografia — Geist apenas */
+  --f: 'Geist', -apple-system, sans-serif;
+
+  /* Escala de raio */
+  --r:  12px;
+  --r2: 20px;
+  --r3: 28px;
+}

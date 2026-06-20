@@ -10,8 +10,8 @@
 <meta property="og:title" content="iPhone 15, 16, 17 — Melhores Preços | iPhoneSmartphone"/>
 <meta property="og:description" content="Compare iPhones 15, 16, 17 e Air. Reviews honestos e os melhores preços da Amazon, Shopee e Mercado Livre."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://iphonesmartphone.com.br/"/>
-<link rel="canonical" href="https://iphonesmartphone.com.br/"/>
+<meta property="og:url" content="https://smartcellasist-stack.github.io/iphone-smartphone/"/>
+<link rel="canonical" href="https://smartcellasist-stack.github.io/iphone-smartphone/"/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4449225172308722" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18147038757"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18147038757');</script>
@@ -631,6 +631,128 @@ footer h5 {
   font-size: .75rem; color: var(--t3); flex-wrap: wrap; gap: 8px;
 }
 
+/* ═══════════ AFFILIATEX BLOCKS ═══════════ */
+
+/* Product Block */
+.afx-product {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+.afx-product:hover { transform: translateY(-4px); box-shadow: 0 20px 48px rgba(0,0,0,.5); }
+.afx-product-header {
+  background: linear-gradient(135deg, var(--bg2), var(--bg3));
+  padding: 28px; text-align: center; border-bottom: .5px solid var(--line);
+  position: relative;
+}
+.afx-product-badge {
+  position: absolute; top: 12px; left: 12px;
+  background: #dc2626; color: #fff;
+  font-size: .65rem; font-weight: 700; padding: 3px 10px;
+  border-radius: 100px; text-transform: uppercase; letter-spacing: .04em;
+}
+.afx-product-img { font-size: 4rem; margin-bottom: 8px; }
+.afx-product-brand { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--t3); margin-bottom: 4px; }
+.afx-product-name { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+.afx-product-body { padding: 20px; }
+.afx-stars { color: #ffd60a; font-size: .85rem; margin-bottom: 8px; }
+.afx-price-wrap { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+.afx-price { font-size: 1.6rem; font-weight: 800; letter-spacing: -.04em; }
+.afx-price-old { font-size: .82rem; color: var(--t3); text-decoration: line-through; }
+.afx-discount { font-size: .75rem; font-weight: 700; color: var(--teal); }
+.afx-features { list-style: none; margin: 14px 0; display: flex; flex-direction: column; gap: 6px; }
+.afx-features li { font-size: .82rem; color: var(--t2); display: flex; align-items: center; gap: 8px; }
+.afx-features li::before { content: '✓'; color: var(--teal); font-weight: 800; font-size: .75rem; flex-shrink: 0; }
+.afx-btn {
+  display: block; text-align: center; padding: 12px;
+  border-radius: var(--r); font-size: .88rem; font-weight: 700;
+  font-family: var(--f); transition: filter .15s, transform .15s;
+  margin-top: 8px;
+}
+.afx-btn:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.afx-btn-amazon { background: var(--amazon); color: #000; }
+.afx-btn-shopee  { background: var(--shopee);  color: #fff; }
+.afx-btn-ghost   { background: var(--bg3); color: var(--t1); border: .5px solid var(--line2); }
+
+/* Verdict Block */
+.afx-verdict {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); padding: 24px; margin-top: 16px;
+}
+.afx-verdict-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.afx-verdict-icon { font-size: 1.8rem; }
+.afx-verdict-title { font-size: 1rem; font-weight: 800; }
+.afx-verdict-sub { font-size: .78rem; color: var(--t3); }
+.afx-score-bar { margin-bottom: 12px; }
+.afx-score-label { display: flex; justify-content: space-between; font-size: .78rem; margin-bottom: 4px; }
+.afx-score-label span:last-child { font-weight: 700; color: var(--teal); }
+.afx-score-track { height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; }
+.afx-score-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--blue), var(--teal)); transition: width .8s cubic-bezier(.16,1,.3,1); }
+.afx-overall {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; background: var(--bg2);
+  border-radius: var(--r); margin-top: 16px;
+  border: .5px solid var(--line);
+}
+.afx-overall-label { font-size: .82rem; color: var(--t2); }
+.afx-overall-score { font-size: 2rem; font-weight: 800; letter-spacing: -.04em; color: var(--teal); }
+
+/* Comparison Table */
+.afx-comparison { overflow-x: auto; border-radius: var(--r2); border: .5px solid var(--line); margin: 24px 0; }
+.afx-comparison table { width: 100%; border-collapse: collapse; min-width: 500px; }
+.afx-comparison thead th {
+  background: var(--bg2); padding: 14px 16px;
+  font-size: .78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .04em; color: var(--t2); border-bottom: .5px solid var(--line);
+  text-align: center;
+}
+.afx-comparison thead th:first-child { text-align: left; }
+.afx-comparison tbody td {
+  padding: 12px 16px; border-bottom: .5px solid var(--line);
+  font-size: .82rem; text-align: center; color: var(--t2);
+}
+.afx-comparison tbody td:first-child { text-align: left; font-weight: 600; color: var(--t1); }
+.afx-comparison tbody tr:last-child td { border-bottom: none; }
+.afx-comparison tbody tr:hover td { background: var(--bg2); }
+.afx-check { color: var(--teal); font-weight: 800; }
+.afx-cross { color: #ff453a; }
+.afx-best { color: var(--blue); font-weight: 700; }
+.afx-comparison tfoot td {
+  padding: 14px 16px; background: var(--bg2);
+  border-top: .5px solid var(--line); text-align: center;
+}
+
+/* Product Table */
+.afx-table { border-radius: var(--r2); border: .5px solid var(--line); overflow: hidden; }
+.afx-table-row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 20px; border-bottom: .5px solid var(--line);
+  transition: background .15s;
+}
+.afx-table-row:last-child { border-bottom: none; }
+.afx-table-row:hover { background: var(--bg2); }
+.afx-table-rank {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--bg3); border: .5px solid var(--line2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .75rem; font-weight: 800; color: var(--t3); flex-shrink: 0;
+}
+.afx-table-rank.gold   { background: rgba(255,214,10,.15); color: #ffd60a; border-color: rgba(255,214,10,.3); }
+.afx-table-rank.silver { background: rgba(161,161,166,.15); color: #a1a1a6; border-color: rgba(161,161,166,.3); }
+.afx-table-rank.bronze { background: rgba(205,127,50,.15); color: #cd7f32; border-color: rgba(205,127,50,.3); }
+.afx-table-icon { font-size: 1.8rem; flex-shrink: 0; }
+.afx-table-info { flex: 1; min-width: 0; }
+.afx-table-name { font-size: .88rem; font-weight: 600; margin-bottom: 3px; }
+.afx-table-desc { font-size: .75rem; color: var(--t3); }
+.afx-table-price { font-size: 1rem; font-weight: 800; letter-spacing: -.02em; white-space: nowrap; }
+.afx-table-btn {
+  padding: 8px 16px; border-radius: 100px;
+  font-size: .75rem; font-weight: 700; font-family: var(--f);
+  white-space: nowrap; flex-shrink: 0;
+  transition: filter .15s;
+}
+.afx-table-btn:hover { filter: brightness(1.12); }
+
 /* ═══════════ MOBILE ═══════════ */
 @media (max-width: 900px) {
   .hero { padding: 72px 24px 48px; }
@@ -662,7 +784,7 @@ footer h5 {
     <li><a href="#vale-trocar">14 → 17 Pro</a></li>
     <li><a href="#notebooks">Notebooks</a></li>
     <li><a href="#quiz">Quiz</a></li>
-    <li><a href="https://iphonesmartphone.com.br/privacidade.html">Privacidade</a></li>
+    <li><a href="#privacidade">Privacidade</a></li>
   </ul>
   <a class="nav-pill np-amazon" href="https://www.amazon.com.br" target="_blank">🛒 Amazon</a>
   <a class="nav-pill np-prime" href="https://www.primevideo.com?tag=martamz07-20&linkCode=abp&ref_=" target="_blank">🎬 Prime</a>
@@ -1042,6 +1164,201 @@ footer h5 {
   <a class="banner-cta bc-prime" href="https://www.primevideo.com?tag=martamz07-20&linkCode=abp&ref_=" target="_blank" rel="sponsored">Experimentar grátis →</a>
 </div></div>
 
+<!-- ═══ AFFILIATEX BLOCKS ═══ -->
+<div class="wrap">
+  <div class="section" style="padding-top:0">
+
+    <p class="section-eyebrow reveal">Análise completa</p>
+    <h2 class="section-title reveal">Escolha o <em>iPhone certo</em></h2>
+
+    <!-- PRODUCT BLOCKS GRID -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-bottom:32px">
+
+      <!-- iPhone 16 — MELHOR ESCOLHA -->
+      <div class="afx-product reveal">
+        <div class="afx-product-header">
+          <div class="afx-product-badge">🏆 Melhor escolha</div>
+          <div class="afx-product-img">📱</div>
+          <div class="afx-product-brand">Apple</div>
+          <div class="afx-product-name">iPhone 16 256GB</div>
+        </div>
+        <div class="afx-product-body">
+          <div class="afx-stars">★★★★★ <span style="color:var(--t3);font-size:.75rem">(5.307)</span></div>
+          <div class="afx-price-wrap">
+            <span class="afx-price">R$ 4.999</span>
+            <span class="afx-price-old">R$ 5.799</span>
+            <span class="afx-discount">-14%</span>
+          </div>
+          <ul class="afx-features">
+            <li>Chip A18 — melhor custo-benefício</li>
+            <li>Câmera 48 MP com controle de câmera</li>
+            <li>Bateria 22h de uso</li>
+            <li>Ceramic Shield 2ª geração</li>
+            <li>Apple Intelligence integrado</li>
+          </ul>
+          <a class="afx-btn afx-btn-amazon" href="https://amzn.to/4wLoukl" target="_blank" rel="sponsored">🛒 Comprar na Amazon</a>
+          <a class="afx-btn afx-btn-ghost" href="#comparativo" style="margin-top:8px">Ver comparativo →</a>
+        </div>
+      </div>
+
+      <!-- iPhone 15 Azul — CUSTO-BENEFÍCIO -->
+      <div class="afx-product reveal">
+        <div class="afx-product-header">
+          <div class="afx-product-badge" style="background:#1a7f4e">💰 Custo-benefício</div>
+          <div class="afx-product-img">📱</div>
+          <div class="afx-product-brand">Apple</div>
+          <div class="afx-product-name">iPhone 15 128GB — Azul</div>
+        </div>
+        <div class="afx-product-body">
+          <div class="afx-stars">★★★★☆ <span style="color:var(--t3);font-size:.75rem">(4.102)</span></div>
+          <div class="afx-price-wrap">
+            <span class="afx-price">R$ 3.799</span>
+            <span class="afx-price-old">R$ 4.499</span>
+            <span class="afx-discount">-16%</span>
+          </div>
+          <ul class="afx-features">
+            <li>Chip A16 Bionic poderoso</li>
+            <li>USB-C — carregamento rápido</li>
+            <li>Dynamic Island exclusivo</li>
+            <li>Câmera 48 MP principal</li>
+            <li>Resistência IP68</li>
+          </ul>
+          <a class="afx-btn afx-btn-amazon" href="https://a.co/d/0hpPxHsX" target="_blank" rel="sponsored">🛒 Comprar na Amazon</a>
+        </div>
+      </div>
+
+      <!-- iPhone 17 Pro — PREMIUM -->
+      <div class="afx-product reveal">
+        <div class="afx-product-header">
+          <div class="afx-product-badge" style="background:#5856d6">⭐ Premium</div>
+          <div class="afx-product-img">📱</div>
+          <div class="afx-product-brand">Apple</div>
+          <div class="afx-product-name">iPhone 17 Pro 256GB</div>
+        </div>
+        <div class="afx-product-body">
+          <div class="afx-stars">★★★★★ <span style="color:var(--t3);font-size:.75rem">(408)</span></div>
+          <div class="afx-price-wrap">
+            <span class="afx-price">R$ 8.199</span>
+            <span class="afx-price-old">R$ 9.299</span>
+            <span class="afx-discount">-12%</span>
+          </div>
+          <ul class="afx-features">
+            <li>Chip A19 Pro — o mais poderoso</li>
+            <li>Zoom óptico 8× profissional</li>
+            <li>Câmera de vapor — performance máxima</li>
+            <li>Tela ProMotion 120Hz 6,3″</li>
+            <li>Apple Intelligence avançado</li>
+          </ul>
+          <a class="afx-btn afx-btn-amazon" href="https://www.amazon.com.br/s?k=iphone+17+pro&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Comprar na Amazon</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- VERDICT BLOCK — iPhone 16 -->
+    <div class="afx-verdict reveal">
+      <div class="afx-verdict-header">
+        <div class="afx-verdict-icon">🏆</div>
+        <div>
+          <div class="afx-verdict-title">Veredicto — iPhone 16 256GB</div>
+          <div class="afx-verdict-sub">Nossa análise completa baseada em uso real</div>
+        </div>
+      </div>
+      <div class="afx-score-bar">
+        <div class="afx-score-label"><span>Performance</span><span>9.5/10</span></div>
+        <div class="afx-score-track"><div class="afx-score-fill" style="width:95%"></div></div>
+      </div>
+      <div class="afx-score-bar">
+        <div class="afx-score-label"><span>Câmera</span><span>9.0/10</span></div>
+        <div class="afx-score-track"><div class="afx-score-fill" style="width:90%"></div></div>
+      </div>
+      <div class="afx-score-bar">
+        <div class="afx-score-label"><span>Bateria</span><span>8.5/10</span></div>
+        <div class="afx-score-track"><div class="afx-score-fill" style="width:85%"></div></div>
+      </div>
+      <div class="afx-score-bar">
+        <div class="afx-score-label"><span>Custo-benefício</span><span>9.2/10</span></div>
+        <div class="afx-score-track"><div class="afx-score-fill" style="width:92%"></div></div>
+      </div>
+      <div class="afx-score-bar">
+        <div class="afx-score-label"><span>Design</span><span>9.0/10</span></div>
+        <div class="afx-score-track"><div class="afx-score-fill" style="width:90%"></div></div>
+      </div>
+      <div class="afx-overall">
+        <div>
+          <div class="afx-overall-label">Nota geral</div>
+          <div style="font-size:.78rem;color:var(--t3);margin-top:2px">Recomendado para a maioria dos usuários</div>
+        </div>
+        <div class="afx-overall-score">9.2</div>
+      </div>
+    </div>
+
+    <!-- PRODUCT TABLE — Top iPhones -->
+    <div style="margin-top:32px">
+      <h3 style="font-family:var(--f);font-size:1.1rem;font-weight:800;margin-bottom:16px;letter-spacing:-.02em" class="reveal">📋 Ranking iPhones 2026</h3>
+      <div class="afx-table reveal">
+
+        <div class="afx-table-row">
+          <div class="afx-table-rank gold">1</div>
+          <div class="afx-table-icon">📱</div>
+          <div class="afx-table-info">
+            <div class="afx-table-name">iPhone 16 256GB</div>
+            <div class="afx-table-desc">Melhor custo-benefício · Chip A18 · Apple Intelligence</div>
+          </div>
+          <div class="afx-table-price" style="color:var(--amazon)">R$ 4.999</div>
+          <a class="afx-table-btn" href="https://amzn.to/4wLoukl" target="_blank" rel="sponsored" style="background:var(--amazon);color:#000">Ver →</a>
+        </div>
+
+        <div class="afx-table-row">
+          <div class="afx-table-rank silver">2</div>
+          <div class="afx-table-icon">📱</div>
+          <div class="afx-table-info">
+            <div class="afx-table-name">iPhone 17 256GB</div>
+            <div class="afx-table-desc">Lançamento 2025 · Chip A19 · Ceramic Shield 2ª gen</div>
+          </div>
+          <div class="afx-table-price" style="color:var(--amazon)">R$ 5.499</div>
+          <a class="afx-table-btn" href="https://a.co/d/0clqyyAU" target="_blank" rel="sponsored" style="background:var(--amazon);color:#000">Ver →</a>
+        </div>
+
+        <div class="afx-table-row">
+          <div class="afx-table-rank bronze">3</div>
+          <div class="afx-table-icon">📱</div>
+          <div class="afx-table-info">
+            <div class="afx-table-name">iPhone 15 128GB — Azul</div>
+            <div class="afx-table-desc">Entrada mais barata · USB-C · Dynamic Island</div>
+          </div>
+          <div class="afx-table-price" style="color:var(--amazon)">R$ 3.799</div>
+          <a class="afx-table-btn" href="https://a.co/d/0hpPxHsX" target="_blank" rel="sponsored" style="background:var(--amazon);color:#000">Ver →</a>
+        </div>
+
+        <div class="afx-table-row">
+          <div class="afx-table-rank">4</div>
+          <div class="afx-table-icon">📱</div>
+          <div class="afx-table-info">
+            <div class="afx-table-name">iPhone 17 Pro 256GB</div>
+            <div class="afx-table-desc">Melhor câmera · Zoom 8× · A19 Pro</div>
+          </div>
+          <div class="afx-table-price" style="color:var(--amazon)">R$ 8.199</div>
+          <a class="afx-table-btn" href="https://www.amazon.com.br/s?k=iphone+17+pro&tag=smartamz07-20" target="_blank" rel="sponsored" style="background:var(--amazon);color:#000">Ver →</a>
+        </div>
+
+        <div class="afx-table-row">
+          <div class="afx-table-rank">5</div>
+          <div class="afx-table-icon">📱</div>
+          <div class="afx-table-info">
+            <div class="afx-table-name">iPhone 14 128GB</div>
+            <div class="afx-table-desc">Mais barato da linha · Excelente desempenho</div>
+          </div>
+          <div class="afx-table-price" style="color:var(--amazon)">R$ 2.999</div>
+          <a class="afx-table-btn" href="https://www.amazon.com.br/s?k=iphone+14&tag=smartamz07-20" target="_blank" rel="sponsored" style="background:var(--amazon);color:#000">Ver →</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- ═══ ADSENSE 5 — ANTES DO COMPARATIVO ═══ -->
 <div class="wrap" style="text-align:center;margin:8px auto 0;">
   <ins class="adsbygoogle"
@@ -1282,7 +1599,7 @@ footer h5 {
 <div class="wrap">
   <div class="disclaimer">
     <div class="disclaimer-box">
-      <span>⚠️ <strong>Aviso de afiliado:</strong> SmartPhone Brasil participa do Programa de Afiliados da Amazon Associates, Shopee Afiliados e Mercado Livre. Ao clicar nos links e realizar uma compra, recebemos uma comissão sem custo adicional para você. Isso nos ajuda a manter o site e oferecer conteúdo gratuito de qualidade. <a href="https://iphonesmartphone.com.br/afiliados.html">Política de monetização</a> · <a href="https://iphonesmartphone.com.br/privacidade.html">Política de privacidade</a> · <a href="https://iphonesmartphone.com.br/privacidade.html#cookies">Gerenciar cookies</a></span>
+      <span>⚠️ <strong>Aviso de afiliado:</strong> SmartPhone Brasil participa do Programa de Afiliados da Amazon Associates, Shopee Afiliados e Mercado Livre. Ao clicar nos links e realizar uma compra, recebemos uma comissão sem custo adicional para você. Isso nos ajuda a manter o site e oferecer conteúdo gratuito de qualidade. <a href="#">Política de monetização</a> · <a href="#">Política de privacidade</a> · <a href="#">Gerenciar cookies</a></span>
     </div>
   </div>
 </div>
@@ -1299,54 +1616,6 @@ footer h5 {
 </div>
 
 <!-- ═══ FOOTER ═══ -->
-
-<!-- ESTILOS DO BLOG -->
-
-
-<!-- ESTILOS DO BLOG -->
-
-
-
-
-<style>
-#blog{padding:4rem 1.5rem;max-width:1200px;margin:0 auto;}
-#blog .section-label{display:inline-block;background:#0f1a2e;color:#93c5fd;font-size:.75rem;font-weight:700;padding:.25rem .65rem;border-radius:4px;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.75rem;}
-#blog h2{font-size:1.75rem;font-weight:800;margin-bottom:.4rem;color:#e8e8e8;}
-#blog .section-sub{color:#888;font-size:.95rem;margin-bottom:2rem;}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;}
-.blog-card{background:#111;border:1px solid #222;border-radius:12px;padding:1.5rem;text-decoration:none;display:flex;flex-direction:column;gap:.6rem;transition:border-color .2s,transform .15s;}
-.blog-card:hover{border-color:#2563eb;transform:translateY(-2px);}
-.card-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;padding:.2rem .5rem;border-radius:4px;width:fit-content;}
-.tag-analise{background:#0f1a2e;color:#93c5fd;}.tag-dicas{background:#0a1a0a;color:#4ade80;}.tag-tutorial{background:#0f1a2e;color:#93c5fd;}.tag-comparativo{background:#1a1000;color:#fbbf24;}.tag-camera{background:#1a0a2e;color:#c4b5fd;}.tag-guia{background:#1a0a00;color:#fb923c;}.tag-notebook{background:#0f1a2e;color:#93c5fd;}.tag-produtividade{background:#0a1a0a;color:#4ade80;}.tag-seguranca{background:#1a0000;color:#f87171;}.tag-alerta{background:#1a1000;color:#fbbf24;}.tag-acessorios{background:#0a1a0a;color:#4ade80;}.tag-tecnologia{background:#1a0a2e;color:#c4b5fd;}
-.blog-card h3{font-size:1rem;font-weight:700;color:#e8e8e8;line-height:1.35;margin:0;}
-.blog-card p{font-size:.87rem;color:#888;line-height:1.55;margin:0;flex:1;}
-.blog-card .read-more{font-size:.82rem;color:#3b82f6;font-weight:600;margin-top:.25rem;}
-</style>
-<section id="blog">
-<div style="max-width:1200px;margin:0 auto;padding:0 1.5rem 1rem;">
-<span class="section-label">📝 Artigos</span>
-<h2>Guias e análises</h2>
-<p class="section-sub">Conteúdo direto ao ponto para você decidir melhor.</p>
-</div>
-<div class="blog-grid" style="max-width:1200px;margin:0 auto;padding:0 1.5rem 4rem;">
-<a href="/artigos/iphone-17-vale-a-pena.html" class="blog-card"><span class="card-tag tag-analise">Análise</span><h3>iPhone 17 vale a pena em 2026?</h3><p>Chip A19, tela maior e Ceramic Shield 2ª geração. Para quem realmente faz sentido?</p><span class="read-more">Ler →</span></a>
-<a href="/artigos/iphone-17-air-vale-pena.html" class="blog-card"><span class="card-tag tag-analise">Análise</span><h3>iPhone 17 Air: o mais fino vale o preço?</h3><p>5,5mm de espessura. Design extremo tem custo: bateria menor e câmera única.</p><span class="read-more">Ler →</span></a>
-<a href="/artigos/iphone-17-pro-camera.html" class="blog-card"><span class="card-tag tag-camera">Câmera</span><h3>iPhone 17 Pro: zoom 8x é mesmo melhor?</h3><p>O dobro do zoom do 16 Pro. Quando essa diferença aparece no dia a dia?</p><span class="read-more">Ler →</span></a>
-<a href="/artigos/melhor-iphone-custo-beneficio.html" class="blog-card"><span class="card-tag tag-guia">Guia</span><h3>Melhor iPhone custo-benefício em 2026</h3><p>iPhone 14, 15 ou 16? O ponto ideal entre preço, desempenho e longevidade.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-ou-android.html" class="blog-card"><span class="card-tag tag-comparativo">Comparativo</span><h3>iPhone ou Android em 2026?</h3><p>Privacidade, câmera, preço e longevidade analisados sem torcida.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-apple-intelligence.html" class="blog-card"><span class="card-tag tag-tecnologia">Tecnologia</span><h3>Apple Intelligence: o que é e como usar</h3><p>Quais iPhones têm, como ativar e quais recursos valem no dia a dia.</p><span class="read-more">Ler →</span></a>
-<a href="/artigos/iphone-bateria-dicas.html" class="blog-card"><span class="card-tag tag-dicas">Dicas</span><h3>Como preservar a bateria do iPhone</h3><p>A diferença entre 85% e 72% de capacidade após 2 anos.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-travando-solucoes.html" class="blog-card"><span class="card-tag tag-dicas">Suporte</span><h3>iPhone travando? 8 soluções que resolvem</h3><p>A maioria resolve em 5 minutos sem assistência técnica.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-seguranca-privacidade.html" class="blog-card"><span class="card-tag tag-seguranca">Segurança</span><h3>Como proteger seu iPhone</h3><p>Face ID, permissões, proteção contra roubo e o que fazer se sumir.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-modo-foco.html" class="blog-card"><span class="card-tag tag-produtividade">Produtividade</span><h3>Modo Foco: pare de se distrair</h3><p>Configure focos para trabalho, estudos e sono com apps por contexto.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-camera-dicas-fotos.html" class="blog-card"><span class="card-tag tag-camera">Câmera</span><h3>7 dicas para fotos melhores com o iPhone</h3><p>Sem instalar nenhum app. Só usando os recursos nativos.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/como-transferir-android-iphone.html" class="blog-card"><span class="card-tag tag-tutorial">Tutorial</span><h3>Transferir dados do Android para iPhone</h3><p>Fotos, contatos, WhatsApp. Passo a passo completo.</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/macbook-air-m2-vale-pena.html" class="blog-card"><span class="card-tag tag-notebook">Notebooks</span><h3>MacBook Air M2 ainda vale em 2026?</h3><p>Com o M3 disponível, o M2 ficou obsoleto? A resposta surpreende.</p><span class="read-more">Ler →</span></a>
-<a href="/artigos/melhor-fone-iphone.html" class="blog-card"><span class="card-tag tag-acessorios">Acessórios</span><h3>Melhor fone para iPhone em 2026</h3><p>AirPods Pro, Sony e Galaxy Buds3. Qual compensa para iPhone?</p><span class="read-more">Ver →</span></a>
-<a href="/artigos/iphone-scratchgate.html" class="blog-card"><span class="card-tag tag-alerta">Alerta</span><h3>Scratchgate do iPhone 17 Pro: é real?</h3><p>Arranhões prematuros nas novas cores. O que está acontecendo.</p><span class="read-more">Ler →</span></a>
-</div>
-</section>
-
 <footer>
   <div class="wrap">
     <div class="footer-grid">
@@ -1377,11 +1646,11 @@ footer h5 {
       <div>
         <h5>Legal</h5>
         <div class="footer-links">
-          <a href="https://iphonesmartphone.com.br/privacidade.html">Política de Privacidade</a>
-          <a href="https://iphonesmartphone.com.br/termos.html">Termos de Uso</a>
-          <a href="https://iphonesmartphone.com.br/afiliados.html">Divulgação de Afiliados</a>
-          <a href="https://iphonesmartphone.com.br/privacidade.html#cookies">Gerenciar Cookies</a>
-          <a href="https://iphonesmartphone.com.br/sobre.html">Sobre nós</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Divulgação de Afiliados</a>
+          <a href="#">Gerenciar Cookies</a>
+          <a href="#">Sobre nós</a>
         </div>
       </div>
     </div>
